@@ -1,0 +1,21 @@
+<html>
+  <head><title>Perbandingan Harga Indomaret dan Alfamart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .responsive-iframe{position:fixed;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:999999}
+  </style>
+  </head>
+  <script>
+    const appScriptUrl = "https://script.google.com/macros/s/AKfycbyVG1kjaJ5IXpLKDM_BBwqmYwVKELFfznUzP4mrCX9S9LMClRD-zjXUFlArzJI5UGHT/exec";
+	window.onload = () => {
+      let param = window.location.href.split(window.location.host+'/')[1] || "";
+      let url = appScriptUrl;
+      if (param.length > 0) url = appScriptUrl+param;
+      document.querySelector('iframe').src = url;
+    }
+  </script>
+  <body>
+   <iframe class="responsive-iframe" allow="fullscreen" src="" style=""></iframe>
+
+  </body>
+</html>
